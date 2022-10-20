@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="normalize.css" />
     <!-- Styles -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="parallax.css" />
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,99 +20,119 @@
     <title>Struggler</title>
   </head>
   <body>
-    <header>
-      <div class="header__bar__container">
-        <h1 class="header__bar__title">Strugglers Portfolio</h1>
+    <div class="body-wrapper">
+      <!-- This wrapper class resolves some compatibility problems with the body and scrolling -->
+      <header>
+        <!-- <div class="header__bar__container">
+          <h1 class="header__bar__title">Strugglers Portfolio</h1>
 
-        <a href="#" class="header__bar__link">link one</a>
-        <a href="#" class="header__bar__link">link two</a>
-        <a href="#" class="header__bar__link">link three</a>
-      </div>
-
-      <div class="header__banner__container">
-        <div class="header__banner__container--text">
-          <h2 class="header__banner__title">This website is awesome</h2>
-          <p class="header__banner__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui itaque
-            odio eligendi nemo neque expedita! Molestias voluptatum libero earum
-            architecto qui dignissimos unde dicta dolorem repudiandae
-            voluptates, odio tenetur quibusdam.
-          </p>
-          <button class="btn--full header__banner__btn">TATAKAE</button>
+          <a href="#" class="header__bar__link">link one</a>
+          <a href="#" class="header__bar__link">link two</a>
+          <a href="#" class="header__bar__link">link three</a>
         </div>
+
+        <div class="header__banner__container">
+          <div class="header__banner__container--text">
+            <h2 class="header__banner__title">This website is awesome</h2>
+            <p class="header__banner__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+              itaque odio eligendi nemo neque expedita! Molestias voluptatum
+              libero earum architecto qui dignissimos unde dicta dolorem
+              repudiandae voluptates, odio tenetur quibusdam.
+            </p>
+            <button class="btn--full header__banner__btn">TATAKAE</button>
+          </div>
+          <img
+            src="./resources/images/banner.jfif"
+            alt="Banners image"
+            class="header__banner__img"
+          />
+        </div> -->
+      </header>
+
+      <div class="parallax__container">
         <img
-          src="./resources/images/banner.jfif"
-          alt="Banners image"
-          class="header__banner__img"
+          src="./resources/images/parallax_background.jpg"
+          alt="bg"
+          class="parallax__background"
+        />
+        <img
+          src="./resources/images/parallax_foreground.png"
+          alt="fg"
+          class="parallax__foreground"
         />
       </div>
-    </header>
 
-    <main>
-      <section class="showcase__container">
-        <h2 class="showcase__title">Some random information.</h2>
+      <main>
+        <section class="showcase__container">
+          <h2 class="showcase__title">Some random information.</h2>
 
-        <div class="showcase__cards-container">
-          <div class="showcase__card">
-            <img
-              src="./resources/images/banner.jfif"
-              alt="TODO"
-              class="showcase__card__img"
-            />
-            <p class="showcase__card__title">Subtitle of card</p>
+          <div class="showcase__cards-container">
+            <div class="showcase__card">
+              <img
+                src="./resources/images/banner.jfif"
+                alt="TODO"
+                class="showcase__card__img"
+              />
+              <p class="showcase__card__title">Subtitle of card</p>
+            </div>
+            <div class="showcase__card">
+              <img
+                src="./resources/images/banner.jfif"
+                alt="TODO"
+                class="showcase__card__img"
+              />
+              <p class="showcase__card__title">Subtitle of card</p>
+            </div>
+            <div class="showcase__card">
+              <img
+                src="./resources/images/banner.jfif"
+                alt="TODO"
+                class="showcase__card__img"
+              />
+              <p class="showcase__card__title">Subtitle of card</p>
+            </div>
+            <div class="showcase__card">
+              <img
+                src="./resources/images/banner.jfif"
+                alt="TODO"
+                class="showcase__card__img"
+              />
+              <p class="showcase__card__title">Subtitle of card</p>
+            </div>
           </div>
-          <div class="showcase__card">
-            <img
-              src="./resources/images/banner.jfif"
-              alt="TODO"
-              class="showcase__card__img"
-            />
-            <p class="showcase__card__title">Subtitle of card</p>
-          </div>
-          <div class="showcase__card">
-            <img
-              src="./resources/images/banner.jfif"
-              alt="TODO"
-              class="showcase__card__img"
-            />
-            <p class="showcase__card__title">Subtitle of card</p>
-          </div>
-          <div class="showcase__card">
-            <img
-              src="./resources/images/banner.jfif"
-              alt="TODO"
-              class="showcase__card__img"
-            />
-            <p class="showcase__card__title">Subtitle of card</p>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="quote__container">
-        <p class="quote__text">
-          You’re right, we are mortal and fragile. But even if we are tortured
-          or wounded, we’ll fight to survive. You should feel the pain we feel
-          and understand. I am the messenger that will deliver you to that pain
-          and understanding.
-        </p>
-        <p class="quote__author">- Guts, Berserk</p>
-      </section>
-
-      <div class="action__floating-card">
-        <div class="action__floating-card__text-container">
-          <p class="action__floating-card__title">Call to action! It's time</p>
-          <p class="action__floating-card__description">
-            Sign up for our struggle
+        <section class="quote__container">
+          <p class="quote__text">
+            You’re right, we are mortal and fragile. But even if we are tortured
+            or wounded, we’ll fight to survive. You should feel the pain we feel
+            and understand. I am the messenger that will deliver you to that
+            pain and understanding.
           </p>
-        </div>
-        <button class="btn--transparent action__floating-card__btn">
-          Struggle
-        </button>
-      </div>
-    </main>
+          <p class="quote__author">- Guts, Berserk</p>
+        </section>
 
-    <footer>
-      <p class="copyright__text">Copyright &copy; Alexandru Minculescu 2022</p>
-    </footer>
+        <div class="action__floating-card">
+          <div class="action__floating-card__text-container">
+            <p class="action__floating-card__title">
+              Call to action! It's time
+            </p>
+            <p class="action__floating-card__description">
+              Sign up for our struggle
+            </p>
+          </div>
+          <button class="btn--transparent action__floating-card__btn">
+            Struggle
+          </button>
+        </div>
+      </main>
+
+      <footer>
+        <p class="copyright__text">
+          Copyright &copy; Alexandru Minculescu 2022
+        </p>
+      </footer>
+    </div>
   </body>
 </html>
